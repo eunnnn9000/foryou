@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/jquery/jquery-3.6.0.min.js"></script>
+  </head>
+  <style>
+#containers{display: flex;justify-content: center;}
+.box{background-color:black;width:300px;height:200px;flex-direction:column;
+justify-content: space-between;margin:70px}
+#containers2{display: flex;justify-content: center;}
+.boxes{background-color:black;width:300px;height:200px;flex-direction:column;
+justify-content: space-between;margin:70px}
+#containers3{display: flex;justify-content: center;}
+.boxes1{background-color:black;width:300px;height:200px;flex-direction:column;
+justify-content: space-between;margin:70px}
+#containers4{display: flex;justify-content: center;}
+.boxesin{background-color:black;width:300px;height:200px;flex-direction:column;
+justify-content: space-between;margin:70px;}
+
+     </style>
+  <body>
+<div id="containers">
+    <div class="box">1</div>
+    <div class="box">1</div>
+    <div class="box">1</div>
+    <div class="box">1</div>
+</div>
+<div id="containers2">
+    <div class="boxes">1</div>
+    <div class="boxes">1</div>
+    <div class="boxes">1</div>
+    <div class="boxes">1</div>
+</div>
+<div id="containers3">
+    <div class="boxes1">1</div>
+    <div class="boxes1">1</div>
+    <div class="boxes1">1</div>
+    <div class="boxes1">1</div>
+</div>
+<div id="containers4">
+    <div class="boxesin">1</div>
+    <div class="boxesin">1</div>
+    <div class="boxesin">1</div>
+    <div class="boxesin">1</div>
+</div>
+
+
+
+
+  </body>
+    
+  <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js" integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
+  <script src="app.js">
+  </script>
+  <script type="text/javascript">
+  
+  $(document).ready(function() {
+wireEvents();
+    });
+
+
+
+
+
+
+    function wireEvents() {
+    $('.box').click(function() {
+        $(this).css('background-color', 'blue');
+    });
+
+    $('.box').dblclick(function() {
+        $(this).css('background-color', 'black');
+    });
+
+    $('.boxes').click(function() {
+        $(this).css('background-color', 'blue');
+    });
+
+    $('.boxes').dblclick(function() {
+        $(this).css('background-color', 'black');
+    });
+
+    $('.boxes1').click(function() {
+        $(this).css('background-color', 'blue');
+    });
+
+    $('.boxes1').dblclick(function() {
+        $(this).css('background-color', 'black');
+    });
+
+    $('.boxesin').click(function() {
+        $(this).css('background-color', 'blue');
+    });
+
+    $('.boxesin').dblclick(function() {
+        $(this).css('background-color', 'black');
+    });
+}
+ 
+   
+
+
+
+
+
+  </script>
+</html>
